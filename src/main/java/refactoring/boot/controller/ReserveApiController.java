@@ -59,7 +59,7 @@ public class ReserveApiController {
         return map;
     }
 
-    @PutMapping("/reservations")
+    @PatchMapping ("/reservations")
     public CancelResponseDto cancelReservation(@RequestParam("reservationId") int reservationId,
                                     @RequestParam("email") String email){
 
